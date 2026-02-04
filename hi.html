@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#fff;
+}
+
+/* TOP LINKS */
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 25px;
+    font-size:14px;
+}
+
+.top-left a,
+.top-right a{
+    margin-right:15px;
+    text-decoration:none;
+    color:#000;
+}
+
+.top-right{
+    display:flex;
+    align-items:center;
+}
+
+.signin{
+    background:#1a73e8;
+    color:#fff;
+    padding:7px 15px;
+    border-radius:4px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* CENTER CONTENT */
+.main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:100px;
+}
+
+.logo{
+    font-size:80px;
+    font-weight:bold;
+}
+
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#EA4335;}
+.logo span:nth-child(3){color:#FBBC05;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#34A853;}
+.logo span:nth-child(6){color:#EA4335;}
+
+.search-box{
+    margin-top:25px;
+    width:550px;
+    border:1px solid #ddd;
+    border-radius:25px;
+    padding:10px 15px;
+    display:flex;
+    align-items:center;
+}
+
+.search-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size:16px;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.buttons button{
+    padding:10px 18px;
+    margin:5px;
+    border:1px solid #f2f2f2;
+    background:#f8f9fa;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.buttons button:hover{
+    border:1px solid #ccc;
+}
+
+/* FOOTER TEXT */
+.lang{
+    margin-top:25px;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+    <div class="top-left">
+        <a href="#">About</a>
+        <a href="#">Store</a>
+    </div>
+
+    <div class="top-right">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <a class="signin" href="#">Sign in</a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="logo">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Google or type a URL">
+    </div>
+
+    <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+    </div>
+
+    <div class="lang">
+        Google offered in: हिन्दी বাংলা తెలుగు मराठी தமிழ் ગુજરાતી
+    </div>
+</div>
+
+</body>
+</html>

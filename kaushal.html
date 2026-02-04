@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Generate Output</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.wrapper{
+    width: 700px;
+    margin: 30px auto;
+    background:#fff;
+    padding: 25px;
+    border: 2px solid #6aa84f;
+}
+
+h2{
+    margin-top: 0;
+    color:#555;
+}
+
+label{
+    font-weight: bold;
+    display:block;
+    margin-top:15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:3px;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-top:8px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    font-weight: normal;
+    display:block;
+}
+
+textarea{
+    resize:none;
+    height:70px;
+}
+
+button{
+    margin-top:20px;
+    background:#6aa84f;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    font-size:15px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Generate Output</h2>
+
+<div class="wrapper">
+
+    <label>Username</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Age</label>
+    <input type="number" placeholder="Enter your age">
+
+    <label>Which option best describes you?</label>
+    <select>
+        <option>Student</option>
+        <option>Intern</option>
+        <option>Working Professional</option>
+    </select>
+
+    <label>Would you recommend CloudSoftLabs to a friend?</label>
+    <div class="radio-group">
+        <label><input type="radio" name="recommend"> Yes</label>
+        <label><input type="radio" name="recommend"> No</label>
+        <label><input type="radio" name="recommend"> Maybe</label>
+    </div>
+
+    <label>Languages and Frameworks known (check all that apply)</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> C</label>
+        <label><input type="checkbox"> C++</label>
+        <label><input type="checkbox"> C#</label>
+        <label><input type="checkbox"> Java</label>
+        <label><input type="checkbox"> Python</label>
+        <label><input type="checkbox"> JavaScript</label>
+        <label><input type="checkbox"> React</label>
+        <label><input type="checkbox"> Angular</label>
+        <label><input type="checkbox"> Django</label>
+        <label><input type="checkbox"> Spring</label>
+    </div>
+
+    <label>Any comments or suggestions</label>
+    <textarea placeholder="Enter your comment here..."></textarea>
+
+    <button>Submit</button>
+
+</div>
+
+</body>
+</html>

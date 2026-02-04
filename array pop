@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Pop Push GUI</title>
+</head>
+<body>
+
+<h3>Array Operations</h3>
+
+<!-- Original Array -->
+<p>
+    <b>Original Array:</b>
+    <span id="originalArray"></span>
+</p>
+
+<!-- Operation Dropdown -->
+<p>
+    <b>Select Operation:</b>
+    <select id="operation">
+        <option value="pop">Pop</option>
+        <option value="push">Push</option>
+    </select>
+</p>
+
+<!-- Input for Push -->
+<p>
+    <b>Enter element to push:</b>
+    <input type="number" id="pushValue">
+</p>
+
+<!-- Button -->
+<button onclick="performOperation()">Apply Operation</button>
+
+<!-- Result Array -->
+<p>
+    <b>Result Array:</b>
+    <span id="resultArray"></span>
+</p>
+
+<!-- Removed Element -->
+<p>
+    <b>Removed Element (after pop):</b>
+    <span id="removedElement">None</span>
+</p>
+
+<script>
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+
+    function displayArray() {
+        document.getElementById("originalArray").innerText = arr.join(", ");
+        document.getElementById("resultArray").innerText = arr.join(", ");
+    }
+
+    function performOperation() {
+        let op = document.getElementById("operation").value;
+
+        if (op === "pop") {
+            if (arr.length === 0) {
+                document.getElementById("removedElement").innerText = "Array is empty";
+            } else {
+                let removed = arr.pop();
+                document.getElementById("removedElement").innerText = removed;
+            }
+        }
+
+        if (op === "push") {
+            let value = document.getElementById("pushValue").value;
+
+            if (value === "") {
+                alert("Enter a value to push");
+                return;
+            }
+
+            arr.push(Number(value));
+            document.getElementById("removedElement").innerText = "None";
+            document.getElementById("pushValue").value = "";
+        }
+
+        displayArray();
+    }
+
+    displayArray();
+</script>
+
+</body>
+</html>
